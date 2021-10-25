@@ -203,7 +203,7 @@
         // Downsize the cd-thumb on vertical scroll
         const primaryCdWidth = cd.offsetWidth
         document.onscroll = function () {
-          const scrollTop = document.documentElement.scrollTop || window.screenY
+          const scrollTop = document.documentElement.scrollTop || window.scrollY
           const newCdWidth = primaryCdWidth - scrollTop
 
           cd.style.width = newCdWidth > 0 ? newCdWidth + 'px' : 0
